@@ -1,19 +1,21 @@
 # Compilador da Linguagem TILT
 
-### Linguagem de Programação Satírica com Análise Léxica, Sintática e Semântica
+### Linguagem de Programação Satírica Inspirada em C
 
 <p align="center">
   <img src="https://img.shields.io/badge/Status-Concluído-success?style=for-the-badge"/>
-  <img src="https://img.shields.io/badge/Java-Compiler-orange?style=for-the-badge&logo=openjdk"/>
-  <img src="https://img.shields.io/badge/Compilers-Academic%20Project-blue?style=for-the-badge"/>
+  <img src="https://img.shields.io/badge/Compiler-Project-blue?style=for-the-badge"/>
   <img src="https://img.shields.io/badge/Language-TILT-red?style=for-the-badge"/>
+  <img src="https://img.shields.io/badge/Syntax-C--Inspired-orange?style=for-the-badge"/>
 </p>
 
 ---
 
 ## Sobre o Projeto
 
-O **TILT** é uma linguagem de programação satírica criada com o objetivo de explorar os conceitos fundamentais da construção de compiladores. Sua sintaxe foi inspirada na ideia de um programador frustrado escrevendo código com pressa, resultando em comandos propositalmente "errados" e totalmente em letras maiúsculas.
+O **TILT** é uma linguagem de programação satírica inspirada na sintaxe da linguagem C e criada com o objetivo de explorar os conceitos fundamentais da construção de compiladores.
+
+Sua proposta é simular um código escrito por um programador frustrado e com pressa, utilizando palavras-chave propositalmente incorretas e comandos totalmente em letras maiúsculas.
 
 Além da definição da linguagem, o projeto implementa um compilador capaz de realizar:
 
@@ -23,22 +25,20 @@ Além da definição da linguagem, o projeto implementa um compilador capaz de r
 * Verificação de Tipos
 * Identificação de Erros e Warnings
 
-O projeto foi desenvolvido como estudo prático dos conceitos abordados na disciplina de Compiladores.
+O projeto foi desenvolvido como estudo prático dos conceitos de Linguagens Formais e Compiladores.
 
 ---
 
 ## Tecnologias Utilizadas
 
-<p align="center">
-  <img src="https://skillicons.dev/icons?i=java" />
-</p>
-
-* Java
-* Estruturas de Dados
-* Expressões Regulares
+* Compiladores
+* Linguagens Formais
 * Análise Léxica
-* Parsing
-* Verificação Semântica
+* Análise Sintática
+* Análise Semântica
+* Tabela de Símbolos
+* Expressões Regulares
+* Estruturas de Dados
 
 ---
 
@@ -118,6 +118,8 @@ EUSE {
 ```text
 WIHLE (IDADE < 10) {
     PRONT(IDADE)
+
+    IDADE = IDADE + 1
 }
 ```
 
@@ -144,11 +146,9 @@ ITN NUMEROS[10]
 ### Bloco
 
 ```text
-*\
-
+*\\
 BLOCO DE COMENTÁRIO
-
-\*
+\\*
 ```
 
 ---
@@ -192,13 +192,13 @@ FAUSE
 
 ## Verificações Semânticas
 
-O compilador realiza diversas validações para garantir a consistência do programa.
+O compilador realiza diversas validações para garantir a consistência dos programas escritos na linguagem.
 
-### Variáveis não declaradas
+### Variáveis Não Declaradas
 
-Gera erro quando uma variável é utilizada antes de ser declarada.
+Gera erro quando uma variável é utilizada antes de sua declaração.
 
-### Variáveis não utilizadas
+### Variáveis Não Utilizadas
 
 Gera warning para variáveis declaradas que nunca são utilizadas.
 
@@ -207,7 +207,7 @@ Gera warning para variáveis declaradas que nunca são utilizadas.
 O compilador impede operações incompatíveis como:
 
 * ITN + CHRA
-* Operações lógicas com tipos não booleanos
+* Operações lógicas utilizando tipos não booleanos
 * Atribuições entre tipos incompatíveis
 
 ### Entrada e Saída Inválidas
@@ -237,14 +237,15 @@ WIHLE (CONTADOR < 5) {
 
 Durante o desenvolvimento deste projeto foram explorados conceitos importantes da área de compiladores:
 
+* Linguagens Formais
+* Gramáticas Livres de Contexto
 * Análise Léxica
 * Análise Sintática
-* Árvores de Sintaxe
 * Tabelas de Símbolos
 * Verificação Semântica
 * Sistemas de Tipos
 * Tratamento de Erros
-* Construção de Linguagens de Programação
+* Projeto de Linguagens de Programação
 
 ---
 
@@ -252,13 +253,14 @@ Durante o desenvolvimento deste projeto foram explorados conceitos importantes d
 
 Este projeto permitiu aprofundar conhecimentos em:
 
-* Estruturas de Linguagens Formais
 * Compiladores
-* Autômatos
-* Expressões Regulares
+* Linguagens Formais
+* Teoria dos Autômatos
+* Gramáticas
 * Parsing
+* Projeto de Linguagens
+* Estruturas de Dados
 * Engenharia de Software
-* Desenvolvimento em Java
 
 ---
 
@@ -266,11 +268,39 @@ Este projeto permitiu aprofundar conhecimentos em:
 
 * Geração de código intermediário
 * Interpretador da linguagem
-* Interface gráfica para execução
+* Ambiente de execução próprio
 * Depurador integrado
-* Mais tipos de dados
-* Funções e procedimentos
-* Suporte a arquivos
+* Suporte a funções e procedimentos
+* Novos tipos de dados
+* Manipulação de arquivos
+* IDE própria para a linguagem TILT
+
+---
+
+## Exemplo de Código
+
+```text
+ITN IDADE
+
+SCUM(IDADE)
+
+IFI (IDADE >= 18) {
+
+    PRONT("MAIOR DE IDADE")
+
+}
+EUSE {
+
+    PRONT("MENOR DE IDADE")
+
+}
+```
+
+---
+
+## Objetivo Acadêmico
+
+O projeto foi desenvolvido com o objetivo de aplicar na prática os conceitos estudados em Linguagens Formais e Compiladores, abrangendo desde a definição da gramática da linguagem até a validação semântica dos programas escritos em TILT.
 
 ---
 

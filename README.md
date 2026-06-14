@@ -233,19 +233,6 @@ WIHLE (CONTADOR < 5) {
 
 ---
 
-## Melhorias Futuras
-
-* Geração de código intermediário
-* Interpretador da linguagem
-* Ambiente de execução próprio
-* Depurador integrado
-* Suporte a funções e procedimentos
-* Novos tipos de dados
-* Manipulação de arquivos
-* IDE própria para a linguagem TILT
-
----
-
 ## Exemplo de Código
 
 ```text

@@ -216,7 +216,7 @@ Comandos `SCUM` e `PRONT` geram erro quando utilizam variáveis inexistentes.
 
 ---
 
-## Exemplo Completo
+## Exemplos de Código
 
 ```text
 ITN CONTADOR
@@ -232,8 +232,6 @@ WIHLE (CONTADOR < 5) {
 ```
 
 ---
-
-## Exemplo de Código
 
 ```text
 ITN IDADE

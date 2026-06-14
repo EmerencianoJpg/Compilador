@@ -233,37 +233,6 @@ WIHLE (CONTADOR < 5) {
 
 ---
 
-## Conceitos Aplicados
-
-Durante o desenvolvimento deste projeto foram explorados conceitos importantes da área de compiladores:
-
-* Linguagens Formais
-* Gramáticas Livres de Contexto
-* Análise Léxica
-* Análise Sintática
-* Tabelas de Símbolos
-* Verificação Semântica
-* Sistemas de Tipos
-* Tratamento de Erros
-* Projeto de Linguagens de Programação
-
----
-
-## Aprendizados
-
-Este projeto permitiu aprofundar conhecimentos em:
-
-* Compiladores
-* Linguagens Formais
-* Teoria dos Autômatos
-* Gramáticas
-* Parsing
-* Projeto de Linguagens
-* Estruturas de Dados
-* Engenharia de Software
-
----
-
 ## Melhorias Futuras
 
 * Geração de código intermediário
